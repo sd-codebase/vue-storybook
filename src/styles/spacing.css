@@ -1,0 +1,16 @@
+/* stylelint-disable */
+:root {
+  --vs-spacing-range-small: 0.25rem;        /* 4px */
+  --vs-spacing-range-medium: 0.75rem;       /* 12px */
+  
+  --vs-spacing-range-1: 0.5rem;             /* 8px */
+  --vs-spacing-range-2: 1rem;               /* 16px */
+  --vs-spacing-range-3: 1.5rem;             /* 24px */
+  --vs-spacing-range-4: 2rem;
+  --vs-spacing-range-5: 2.5rem;
+  --vs-spacing-range-6: 3rem;
+  --vs-spacing-range-7: 3.5rem;
+  --vs-spacing-range-8: 4rem;
+  --vs-spacing-range-9: 4.5rem;
+  --vs-spacing-range-10: 5rem;              /* 80px */
+}

@@ -1,0 +1,7 @@
+/* stylelint-disable */
+:root {
+  --vs-shadow-small: 0px 2px 4px rgba(14, 14, 14, 0.08);
+  --vs-shadow-medium: 0px 4px 8px rgba(14, 14, 14, 0.1);
+  --vs-shadow-large: 0px 8px 16px rgba(14, 14, 14, 0.1);
+  --vs-shadow-xl: 0px 18px 32px rgba(14, 14, 14, 0.1);
+}
