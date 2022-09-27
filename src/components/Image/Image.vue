@@ -1,20 +1,33 @@
-<script>
-export default {
-  props: ['imgSrc', 'alt', 'size'],
-  methods: {
-    getAltText() {
-      return this.alt;
+<script lang="ts">
+  import {defineComponent} from 'vue';
+  export default defineComponent({
+    props: {
+      imgSrc: {
+        type: String,
+        required: true,
+      },
+      alt: {
+        type: String,
+      },
+      size: {
+        type: String,
+        default: () => "medium",
+      }
     },
-    getImageSource() {
-      return this.imgSrc;
-    },
-  }
-}
+    methods: {
+      getAltText() {
+        return this.alt;
+      },
+      getImageSource() {
+        return this.imgSrc;
+      },
+    }
+  });
 </script>
 
 <template>
-  <div class="image-container" :class="[size]">
-    <img class="image" :src="imgSrc" :alt="alt"/>
+  <div class="image-container" :class="[size]" data-testid="image-container">
+    <img class="image" :src="imgSrc" :alt="alt" data-testid="image"/>
   </div>
 </template>
 
